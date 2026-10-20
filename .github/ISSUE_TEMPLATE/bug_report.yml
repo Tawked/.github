@@ -1,0 +1,65 @@
+name: Bug report
+description: Something in an SDK does not work as its README or the docs say.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting it. Never paste an API key, an account token or a webhook secret here.
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - "@tawked/sdk"
+        - "@tawked/better-auth"
+        - tawked/tawked-php
+        - tawked/laravel
+        - tawked (Python)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The package's version, as your lock file shows it.
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime and version
+      placeholder: Node 22, PHP 8.4, Python 3.13, Laravel 13, Better Auth 1.7
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened
+      description: The error, its message and its code, or what you saw.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: Code to reproduce
+      description: The smallest code that shows the problem.
+  - type: input
+    id: request-id
+    attributes:
+      label: Request id
+      description: The `X-Request-Id` of a failing call, if there is one.
+  - type: checkboxes
+    id: secrets
+    attributes:
+      label: Before you submit
+      options:
+        - label: I removed every API key and token from this issue.
+          required: true

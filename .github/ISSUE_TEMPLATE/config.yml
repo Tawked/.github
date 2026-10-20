@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help with your Tawked account or integration
+    url: https://tawked.com/en/contact
+    about: Questions about your account, your keys or how to build something. Not an SDK bug.
+  - name: Documentation
+    url: https://docs.tawked.com
+    about: Guides, the API reference and every SDK's examples.
+  - name: Service status
+    url: https://tawked.com/en/status
+    about: Check here first when calls fail for everyone.
+  - name: Report a vulnerability privately
+    url: https://github.com/tawked/.github/blob/main/SECURITY.md
+    about: Never in a public issue. Our security policy says how.
